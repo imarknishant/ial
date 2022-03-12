@@ -1,0 +1,13 @@
+footer#Footer {
+    padding: 30px 10px;
+
+    p
+    {
+        color:$g-text;
+        
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+}

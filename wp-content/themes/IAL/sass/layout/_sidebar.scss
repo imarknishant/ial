@@ -1,0 +1,145 @@
+#MenuSidebar{
+    background: $color-primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 290px;
+    padding-top: 85px;
+    padding-bottom: 70px;
+
+
+    @include breakpoint(desktop)
+    {
+        width:230px;
+    }
+
+    .cmScroll
+    {
+        height: 100%;
+    }
+
+    .card
+    {
+        background-color: transparent;
+        border: 0;
+        // padding: 20px 0;
+        // border-top: 1px solid rgba($g-text, 0.4);
+
+        // @include breakpoint(desktop)
+        // {
+        //     padding: 15px 0;
+        // }
+ 
+        .card-header {
+            border-radius: 0;
+            padding:15px 10px;
+            background-color: transparent;
+            // padding: 20px 0;
+            border-top: 1px solid rgba($g-text, 0.4);
+            border-left: 4px solid transparent;
+
+            @include breakpoint(desktop)
+            {
+                padding:15px 10px;
+            }
+
+            h6
+            {
+                color: $g-text;
+                text-transform: uppercase;
+                font-size: 16px;
+
+                @include breakpoint(desktop)
+                {
+                    font-size: rem(14px);
+                }
+            }
+
+            &.active
+            {
+                background-color: #202020;
+                border-left: 4px solid $g-text-hover;
+                
+                h6
+                {
+                    color: $g-text-hover; 
+                }
+
+                i
+                {
+                    color: $color-secondary;
+                }
+            }
+        }
+        
+        .card-body
+        {
+            padding:0;
+
+            ul
+            {
+                li
+                {
+                    a
+                    {
+                        font-size: 14px;
+                        color: $g-text;
+                        background-color: transparent;
+                        padding: rem(7px 10px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#aside_menu .card-body>ul,
+.primary_menu
+{
+    &>li
+      {
+          &>a {
+              font-size: rem(16px);
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              padding: rem(14px 10px);
+              color: $g-text;
+              background-color: transparent;
+              border-left: 4px solid transparent;
+
+              @include breakpoint(desktop)
+              {
+                  font-size: rem(14px);
+                  padding: rem(10px);
+              }
+
+              figure
+              {
+                  margin: 0 25px 0 0;
+              }
+
+              i
+              {
+                  color: #8d8d8d;
+                  @include transition();
+              }
+
+              &.active,
+              &:hover
+              {
+                  color: $g-text-hover;
+                background-color: #202020;
+                border-left: 4px solid $g-text-hover;
+
+                i
+                {
+                    color: $color-secondary;
+                }
+              }
+          }
+      }
+} 

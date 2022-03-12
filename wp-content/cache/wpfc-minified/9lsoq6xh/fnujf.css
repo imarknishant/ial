@@ -1,0 +1,26 @@
+h1.terms-title {
+font-size: 46px;
+}
+.heading{
+text-align:center;
+} 
+h2#cont_title {
+font-size: 44px;
+color: white;
+}
+.contact_title {
+text-align: center;
+color: white;
+}
+h6#create-thumbnail {
+color: white;
+font-weight: 400;
+}
+img#create-thumbnail {
+width:50px;
+height:35px;
+}
+h6#thumbnail-trim{
+color:white;
+font-weight: 400;
+}

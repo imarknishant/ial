@@ -1,0 +1,112 @@
+#Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $color-header;
+    padding: 15px;
+    @include flex;
+    z-index: 999;
+
+    .elem-start {
+        display: flex;
+        align-items: center;
+    }
+
+    .elem-end{
+        text-align: right;
+    }
+
+    .toggleBtn {
+        background: transparent;
+        border: none;
+        border-radius: 0px;
+        color: $white;
+        margin-right: rem(5px);
+
+        i.material-icons {
+            font-size: rem(24px);
+        }
+    }
+
+    .logo {
+        margin-right: rem(40px);
+        max-width: rem(225px);
+        
+        a {
+            display: block;
+        }
+    }
+
+    .search-bar {
+        form {
+            position: relative;
+
+            .form-control {
+                width: 600px;
+                height: 45px;
+                border: solid 1px transparent;
+                padding: 2px 15px;
+                padding-right: 60px;
+                font-size: 14px;
+                color: $white;
+                border-radius: 40px;
+                background: $color-primary;
+                font-weight: 400;
+                letter-spacing: 0.03em;
+
+                @include breakpoint(desktop)
+                {
+                    width:370px;
+                }
+
+                @include placeholder {
+                    color: #979797;
+                    font-weight: 500;
+                }
+
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                    background: rgba($color-primary, 0.30);
+                    border-color:$color-primary;
+                }
+            }
+
+            .search-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 45px;
+                border: none;
+                color: $white;
+                background: transparent;
+                color: #979797;
+                padding-right: 7px;
+
+
+                i.material-icons {
+                    font-size: rem(24px);
+                    @include transition;
+                }
+
+                &:hover,
+                &:focus {
+                    i.material-icons {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .btn-group{
+        .btn{
+            margin-left: rem(15px);
+
+        }
+    }
+
+}

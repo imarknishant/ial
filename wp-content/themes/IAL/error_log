@@ -1,0 +1,4 @@
+[22-Jan-2022 03:02:44 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/ialvideo/public_html/wp-content/themes/IAL/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/ialvideo/public_html/wp-content/themes/IAL/index.php on line 17
